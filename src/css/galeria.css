@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(180deg, rgb(20, 19, 33), rgb(35, 51, 74));
+}
+header {
+    max-width:800px;
+    margin: auto;
+    margin-block: 20px;
+    display: flex;
+
+}
+.botao-voltar {
+    display: flex;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2 );
+    padding:10px;
+    border-radius: 50px;
+}
+.botao-voltar:hover{
+    padding: 11px;
+    transition-duration: 0.3s;
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.1 );   
+}
+.titulo, .descricaogaleria {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: white;
+    margin-left: 0px;
+    margin-top: 16px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        max-width: 715px;
+        padding: 20px;
+        border-radius: 15px;
+}
+.imagem {
+    width: 175px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.imagem:hover {
+    transition-duration: 0.3s;
+    opacity: 0.5;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    gap: 10px;
+    justify-content: center;
+}
+footer {
+    margin-top:100px;
+    padding: 12px;
+}
+.descricaogaleria {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+
+/* Resposividade */
+
+
+@media (width < 768px) {
+    .botao-voltar {
+        margin: 15px;
+
+    }
+    .titulo {
+        margin-right: 240px;
+    }
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 4fr);
+        margin: 0 auto;
+        gap: 6px; 
+    }
+    main {
+        display: flex;
+        padding: 8px;
+        margin: auto;
+        border-radius: 7px;
+    }
+    main {
+        max-width: 348px;
+    }
+    .imagem {
+        width: 165px;
+    }
+}
+
+
+    

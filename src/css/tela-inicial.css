@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(180deg, rgb(20, 19, 33), rgb(35, 51, 74));
+}
+
+.logo{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+    font-size: 45px;
+    color: white;
+}
+main {
+    margin: auto;
+    max-width: 950px; 
+}
+.texto, button, p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.texto {
+    font-size:20px;
+    text-align: justify;
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 800px;
+    margin: auto;
+    padding: 12px;
+    border-radius: 8px;
+}
+.texto:hover {
+    opacity: 0.8;
+}
+button {
+    display: flex;
+    margin: auto;
+    margin-block: 50px;
+    padding: 10px 50px ;
+    font-size: 22px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+button:hover {
+    transition-duration: 0.2s;
+    padding:11px 55px ;
+    background-color: deepskyblue;
+    border: none;
+    outline: none;
+}
+footer {
+    margin-top: 300px;
+    padding: 12px;
+}
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    
+}
+.github {
+    width: 50px;
+}
+p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+@media (  width < 768px) {
+    .logo {
+        margin-block: 20px;
+        font-size: 40px;
+    }
+    .texto {
+        font-size: 20px;
+    }
+    button {
+        padding: 8px 50px;
+        font-size: 5vw;
+    }
+    footer {
+        margin-block: -12px;
+    }
+    p {
+        font-size: 4.5vw;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    
+}
+
